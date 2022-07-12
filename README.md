@@ -11,7 +11,7 @@ The input datasets shoud contain the CDRs and peptide sequences. For the CDR3 tr
 The inputs files for the training scripts are the training dataset and the validation data, used for early stopping.
 
 Example:
-`python train_nettcr_cdr123.py --train_file test/train_data --val_data test/val_data --outdir test/ --chain ab`
+`python train_nettcr_cdr3.py --train_file test/train_data --val_data test/val_data --outdir test/ --chain ab`
 
 This will generate and save a `.pt` file with the the traiend model. The directory has to be specified with the option `--outdir`.
 
@@ -21,6 +21,6 @@ The other input arguments to the script are `--epochs`, `--learning_rate`, `--ve
 The test scripts can be used to make predictions of test TCRs, using a pre-trained model.
 
 Example:
-`python test_nettcr_cdr123.py --test_file test/test_data --outdir test/models/ --chain ab`
+`python test_nettcr_cdr3.py --test_file test/test_data --trained_model test/models/trained_model_cdr3_ab.pt --outdir test/models/ --chain ab`
 
 This will generate and save a `.csv` file with the prediction. The file will be saved in the specified output directory. 
