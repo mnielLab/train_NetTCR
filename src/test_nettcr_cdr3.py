@@ -20,7 +20,6 @@ import torch.optim as optim
 from torch.utils.data import Dataset, DataLoader, TensorDataset
 
 from nettcr_archs import NetTCR_CDR3, NetTCR_CDR3_singlechain
-from sklearn.metrics import roc_auc_score
 
 import utils
 import time, random
