@@ -7,6 +7,7 @@ if torch.cuda.is_available():
     device = "cuda:0"
 else:
     print('No GPU available, using the CPU instead.')
+    device='cpu'
 
 import numpy as np
 import pandas as pd 
