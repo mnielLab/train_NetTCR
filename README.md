@@ -14,7 +14,7 @@ The inputs files for the training scripts are the training dataset and the valid
 
 Example:
 
-`python src/train_nettcr_cdr3.py --train_data test/train_data --val_data test/val_data --outdir test/ --chain ab`
+`python src/train_nettcr_cdr3.py --train_data test/train_data --val_data test/val_data --outdir test/models/ --chain ab`
 
 This will generate and save a `.pt` file with the the traiend model. The directory has to be specified with the option `--outdir`.
 
