@@ -1,5 +1,5 @@
-# NetTCR - Sequence-based prediction of peptide-TCR interacions
-NetTCR is a deep learning model used to predict TCR specificity. NetTCR uses convolutional neural networks (CNN) to predict whether a given TCR binds a specific peptide. 
+# NetTCR-2.1 - Sequence-based prediction of peptide-TCR interacions using CDR1, CDR2 and CDR3 loops 
+NetTCR-2.1 is a deep learning model used to predict TCR specificity. NetTCR-2.1 uses convolutional neural networks (CNN) to predict whether a given TCR binds a specific peptide.
 
 The scripts in this repo allow training and testing of models. It is possible to train/test using CDR3 only (with `train_nettcr_cdr3.py` and `test_nettcr_cdr3.py`) or all the CDRs (with `train_nettcr_cdr123.py` and `test_nettcr_cdr123.py`). It is also possible to choose, with the `--chain` option, which chains of the TCRs to use for training.
 
@@ -14,7 +14,8 @@ The inputs files for the training scripts are the training dataset and the valid
 
 Example:
 
-`python src/train_nettcr_cdr3.py --train_data test/train_data --val_data test/val_data --outdir test/models/ --chain ab`
+`python src/train_nettcr_cdr3.py --train_data test/train_data \`
+`--val_data test/val_data --outdir test/models/ --chain ab`
 
 This will generate and save a `.pt` file with the the traiend model. The directory has to be specified with the option `--outdir`.
 
